@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.startapp.sdk.ads.banner.Banner
+        android:layout_alignParentBottom="true"
+        android:id="@+id/startAppBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tela 2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="25dp"
+            app:cornerRadius="8dp"
+            android:id="@+id/btn"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interticial"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="25dp"
+            app:cornerRadius="8dp"
+            android:id="@+id/interstitial_btn"/>
+
+
+
+
+
+        <Button
+            android:id="@+id/start_app_rewarded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cornerRadius="8dp"
+        android:text="Iniciar aplicativo recompensado"/>
+
+        <Button
+            android:id="@+id/start_app_offerwall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:layout_constraintTop_toBottomOf="@id/start_app_rewarded"
+        app:cornerRadius="8dp"
+        android:text="Iniciar oferta de aplicativos"/>
+
+        <Button
+            android:id="@+id/start_app_fullpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:layout_constraintTop_toBottomOf="@id/start_app_offerwall"
+        app:cornerRadius="8dp"
+        android:text="Iniciar página inteira do aplicativo"/>
+
+        <Button
+            android:id="@+id/start_app_Automatic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:layout_constraintTop_toBottomOf="@id/start_app_fullpage"
+        app:cornerRadius="8dp"
+        android:text="Iniciar aplicativo automaticamente"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
